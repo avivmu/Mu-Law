@@ -1,8 +1,9 @@
-from flask.ext.wtf import Form
+from flask_wtf import FlaskForm
 from wtforms import StringField, TextAreaField
-from wtforms.validators import Required, Length, Email
+from wtforms.validators import InputRequired, Length, Email
 
-class VisitorForm(Form):
-    name = StringField('', validators=[Required(), Length(2, 16)])
-    email = StringField('', validators=[Required(), Length(9, 36), Email()])
-    text = TextAreaField('', validators=[Required(), Length(2, 200)])
+
+class VisitorForm(FlaskForm):
+    name = StringField('name', validators=[InputRequired(), Length(2, 16)])
+    email = StringField('email', validators=[InputRequired(), Length(9, 36), Email()])
+    text = TextAreaField('text', validators=[InputRequired(), Length(2, 200)])

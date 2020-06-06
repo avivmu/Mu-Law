@@ -41,8 +41,9 @@ def contact(language):
     if form.validate_on_submit():
         subject = 'mu-law.com'
         body = 'Message:\n' + form.text.data
-        body += '\n\nname: ' + form.name.data + '\nemail: ' + form.email.data
-        send_email(subject, body)
+        body += '\n\nname: ' + form.name.data
+        from_email = form.email.data
+        send_email(subject, body, from_email)
         return redirect(url_for('thank_you', language=language))
     return render_contact(form, title, name, email, text, submit, language)
 

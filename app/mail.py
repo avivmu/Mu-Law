@@ -1,8 +1,10 @@
 import os
-import sendgrid
 
-def send_email(subject, body):
-    mail = os.environ.get('MAIL_USERNAME')
-    sg = sendgrid.SendGridClient(os.environ.get('SENDGRID_APIKEY'))
-    message = sendgrid.Mail(to=mail, subject=subject, html=body, text=body, from_email=mail)
-    sg.send(message)
+from sendgrid import sendgrid
+from sendgrid.helpers.mail import *
+
+
+def send_email(filled_subject, body, sender_mail):
+    sg = sendgrid.SendGridAPIClient(api_key=os.environ.get('SENDGRID_API_KEY'))
+    sg.client.mail.send.post(request_body=Mail(sender_mail, To(os.environ.get('MAIL_USERNAME')),
+                                               filled_subject, PlainTextContent(body)).get())
