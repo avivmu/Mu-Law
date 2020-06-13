@@ -14,6 +14,9 @@
 a, a:visited, a:link {
     text-decoration: none;
 }
+.site-dev {
+    font-size: 11px;
+}
 html {
     height: 100%;
 }
@@ -261,6 +264,13 @@ footer .right-bar {
 .active, .expertise-menu li.active {
     background: rgb(40,42,56);
     color: #f5f5f5;
+}
+
+.hebrew {
+    text-align: right;
+}
+.g-maps {
+    border: 0;
 }
 
 @media (max-width:1170px) {

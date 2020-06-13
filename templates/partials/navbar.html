@@ -11,7 +11,7 @@
         <ul class="languages">
             {% for l in langs %}
                 <li>
-                    <a href="{{ l.path }}" {% if l.path == '/he' %}style="font-size:15.5px;"{% endif %}>
+                    <a href="{{ l.path }}">
                         <img src="{{ url_for('static', filename='images/' + l.image) }}" height="10" title="{{ l.id }}" />
                         <span>{{ l.id }}</span>
                     </a>
