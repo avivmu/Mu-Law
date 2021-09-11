@@ -1,6 +1,6 @@
 from flask import Flask, redirect, url_for
 from app import *
-from app.renderers import render_thankyou, render_contact, render_page
+from app.renderers import render_thankyou, render_page
 from app.forms import VisitorForm
 from app.config import SECRET
 from app.mail import send_email
@@ -29,23 +29,23 @@ def lawyers(language):
     return render_page('lawyers.html', data=lawyers_list, language=language)
 
 
-@app.route('/<language>/contact', methods=['GET', 'POST'])
-def contact(language):
-    labels = contact_form[language]
-    title = labels['title']
-    name = labels['name']
-    email = labels['email']
-    text = labels['text']
-    submit = labels['submit']
-    form = VisitorForm()
-    if form.validate_on_submit():
-        subject = 'mu-law.com'
-        body = 'Message:\n' + form.text.data
-        body += '\n\nname: ' + form.name.data
-        from_email = form.email.data
-        send_email(subject, body, from_email)
-        return redirect(url_for('thank_you', language=language))
-    return render_contact(form, title, name, email, text, submit, language)
+# @app.route('/<language>/contact', methods=['GET', 'POST'])
+# def contact(language):
+#     labels = contact_form[language]
+#     title = labels['title']
+#     name = labels['name']
+#     email = labels['email']
+#     text = labels['text']
+#     submit = labels['submit']
+#     form = VisitorForm()
+#     if form.validate_on_submit():
+#         subject = 'mu-law.com'
+#         body = 'Message:\n' + form.text.data
+#         body += '\n\nname: ' + form.name.data
+#         from_email = form.email.data
+#         send_email(subject, body, from_email)
+#         return redirect(url_for('thank_you', language=language))
+#     return render_contact(form, title, name, email, text, submit, language)
 
 
 @app.route('/<language>/thank-you')

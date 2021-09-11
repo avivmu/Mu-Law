@@ -37,8 +37,8 @@ def render_page(template, data=None, on_expertise=False, language='en', descript
     return add_header(page_template)
 
 
-def render_contact(form, title, name, email, text, submit, language='en'):
-    template = render_template('contact.html', form=form, title=title, name=name, email=email, text=text, submit=submit,
-                               langs=langs, data=contact_info, language=language, on_contact=True, side_menu=side_menu,
-                               header=header, lang_label=lang_label)
-    return add_header(template)
+# def render_contact(form, title, name, email, text, submit, language='en'):
+#     template = render_template('contact.html', form=form, title=title, name=name, email=email, text=text, submit=submit,
+#                                langs=langs, data=contact_info, language=language, on_contact=True, side_menu=side_menu,
+#                                header=header, lang_label=lang_label)
+#     return add_header(template)
