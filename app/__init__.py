@@ -137,11 +137,6 @@ lawyers_list = {
                 'Research Fellowship for International Trade Law at the University St. Gallen in Switzerland',
                 'Lecturer for International Trade Contracts at the Isemi College in Tel Aviv, Israel.'
             ]
-        },
-        {
-            'name': 'Dr. Elihau Zvi Steinlauf',
-            'image': 'edi.png',
-            'general': ['Dr. Steinlauf is admitted to the Israel Bar, the Illinois Bar and the Federal Bar. Dr. Steinlauf represents our clients mainly in the following fields in both American and Israeli Law: commercial law, real estate transactions, succession proceedings, litigation in court and arbitration. Dr. Steinlauf has also many years of experience in debt collection.']
         }
     ],
     'de': [
@@ -167,14 +162,6 @@ lawyers_list = {
                 'Assistent am Institut für Europäisches und Internationales Wirtschaftsrecht an der Handelshochschule St.Gallen.',
                 'Dozent für Internationales Wirtschaftsrecht bei ISEMI, Tel-Aviv.'
             ]
-        },
-        {
-            'name': 'Dr. Zvi Eduard Steinlauf',
-            'image': 'edi.png',
-            'general': [
-                'RA Dr. Steinlauf ist als Anwalt sowohl in Israel als auch in den USA zugelassen (im Staat Illinois und beim Federal Court).',
-                'Ra Dr. Steinlauf ist auf folgenden Fachbereichen spezialisiert: Wirtschaftrecht, Immobilienrecht, Erbrecht, Litigation. Er vertritt unsere Kunden sowohl im amerikanischen als auch im israelischen Recht. Im übrigen hat Dr. Steinlauf langjährige Erfahrung in Bereich der Schuldeintreibungen.'
-            ]
         }
     ],
     'he': [
@@ -198,22 +185,6 @@ lawyers_list = {
             'prev_positions': [
                 'חוקר במכון למשפט מסחרי בינלאומי באוניברסיטת סאן גאלן בשוויץ',
                 '(בתל אביב) Isemi מרצה לדיני חוזים וסחר בינלאומי במכללת'
-            ]
-        },
-        {
-            'name': 'ד"ר אליהו צבי שטיינלוף',
-            'image': 'edi.png',
-            'general': [
-                'עורך דין ונוטריון',
-                'עו"ד ד"ר שטיינלוף מוסמך בעריכת דין הן בישראל והן בארה"ב (במדינת אילינוי והן בלשכה הפדרלית של ארה"ב)'
-            ],
-            'expert_fields_text': 'תחומי התמחות',
-            'expert_fields': [
-                'דין מסחרי',
-                'נדל"ן',
-                'דיני ירושה',
-                'דין אמריקאי',
-                'גביית חובות'
             ]
         }
     ]
