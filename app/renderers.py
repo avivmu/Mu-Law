@@ -21,6 +21,7 @@ def add_header(template):
                                             " 'sha256-7Amc3B9rHQY0hLlWqTQEKs3q3QvhryqpcXMCm6Q7/3Y=';" #Hebrew
                                             " script-src-elem"
                                             " 'self'"
+                                            " https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"
                                             " https://www.google-analytics.com;"
                                             " font-src"
                                             " https://fonts.gstatic.com;"

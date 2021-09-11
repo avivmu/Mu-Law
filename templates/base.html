@@ -7,8 +7,9 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css' />
     <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon" />
     {% include 'snippets/style.min.html' %}
-    <script src="{{ url_for('static', filename='scripts/initializer.js') }}" type="text/javascript" defer></script>
+    <script src="{{ url_for('static', filename='scripts/lang-initialize.js') }}" type="text/javascript" defer></script>
     <script src="{{ url_for('static', filename='scripts/ga-init.js') }}" type="text/javascript" defer></script>
+    <script src="{{ url_for('static', filename='scripts/expertise-initialize.js') }}" type="text/javascript" defer></script>
 </head>
 
 <body>
@@ -20,4 +21,5 @@
 </div>
 {% include 'partials/footer.html' %}
 </body>
+{% block scripts %}{% endblock %}
 </html>
