@@ -3,17 +3,12 @@
 {% block content %}
     <ul class="expertise-menu float-right">
         {% for d in data[language] %}
-            <li class="head" data-bind="css: {'active': {{ loop.index }} === active()}, click: function(){activate({{ loop.index }});}">
-            {{ d.head }}
-        	</li>
-            <li class="body" data-bind="style: {'display': {{ loop.index }} === active() ? 'block' : 'none'}, click: function(){activate({{ loop.index }});}">
-            	{{ d.body }}
+            <li class="head" data-index="{{ loop.index0 }}">
+                {{ d.head }}
+            </li>
+            <li class="body collapsed" data-index="{{ loop.index0 }}">
+                {{ d.body }}
             </li>
         {% endfor %}
     </ul>
-{% endblock %}
-
-{% block scripts %}
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
-
 {% endblock %}

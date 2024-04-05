@@ -1,9 +1,8 @@
 from flask import Flask, redirect, url_for
+
 from app import *
-from app.renderers import render_thankyou, render_page
-from app.forms import VisitorForm
 from app.config import SECRET
-from app.mail import send_email
+from app.renderers import render_thankyou, render_page
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = SECRET
